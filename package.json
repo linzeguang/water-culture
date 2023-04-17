@@ -2,9 +2,6 @@
   "name": "water-culture",
   "version": "0.0.1",
   "homepage": "./",
-  "engines": {
-    "node": "~16"
-  },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
