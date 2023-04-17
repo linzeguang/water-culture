@@ -1,0 +1,247 @@
+body {
+  background-color: #9bd4d5;
+}
+button {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.cloud-top-right {
+  position: absolute;
+  z-index: -1;
+  top: -4px;
+  right: -6px;
+  height: 92px;
+}
+.cloud-top-left {
+  position: absolute;
+  z-index: -1;
+  top: -22px;
+  left: -28px;
+  height: 198px;
+}
+
+.cloud-bottom-left {
+  position: absolute;
+  z-index: -1;
+  top: 534px;
+  left: -22px;
+  height: 64px;
+}
+
+.man {
+  position: absolute;
+  z-index: -2;
+  top: 508px;
+  left: -2px;
+  height: 102px;
+}
+
+.balloon-blue {
+  position: absolute;
+  top: 4px;
+  left: 52px;
+  height: 98px;
+  animation: balloon 4000ms infinite linear;
+  transform-origin: bottom center;
+}
+.balloon-red {
+  position: absolute;
+  top: 20px;
+  left: 109px;
+  height: 78px;
+  animation: balloon 5000ms infinite linear;
+  transform-origin: bottom center;
+}
+.balloon-yellow {
+  position: absolute;
+  top: 20px;
+  left: 158px;
+  height: 83px;
+  animation: balloon 6000ms infinite linear;
+  transform-origin: bottom center;
+}
+@keyframes balloon {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(5px) rotate(4deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0);
+  }
+  75% {
+    transform: translateY(-5px) rotate(-4deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.title {
+  position: absolute;
+  top: 76px;
+  left: 14px;
+  height: 57px;
+}
+.feiji {
+  position: absolute;
+  top: 43px;
+  right: 3px;
+  height: 106px;
+  animation: feiji 2000ms infinite linear;
+}
+
+@keyframes feiji {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.ditu-wrapper {
+  position: relative;
+  margin-top: 104px;
+  margin-left: 7px;
+  margin-right: 5px;
+  display: flex;
+}
+
+.dahaiou {
+  position: absolute;
+  top: 47px;
+  left: 20px;
+  height: 95px;
+}
+
+.xiaohaiou {
+  position: absolute;
+  top: 300px;
+  right: 68px;
+  height: 47px;
+}
+
+.tips {
+  position: absolute;
+  bottom: -15px;
+  right: 17px;
+  height: 57px;
+}
+
+.local-temp {
+  position: absolute;
+  bottom: 62px;
+  right: 24px;
+  height: 21px;
+}
+
+.click {
+  position: absolute;
+  bottom: 47px;
+  right: 6px;
+  height: 24px;
+}
+
+.local {
+  transition: all 400ms;
+}
+
+.local:active {
+  transform: scale(1.2);
+}
+
+.local-DSKSK {
+  position: absolute;
+  top: 122px;
+  left: 63px;
+  height: 37px;
+}
+
+.local-YSHBD {
+  position: absolute;
+  z-index: 2;
+  top: 312px;
+  right: 134px;
+  height: 26px;
+}
+
+.local-LHHBD {
+  position: absolute;
+  z-index: 2;
+  top: 274px;
+  left: 138px;
+  height: 39px;
+}
+
+.local-LSKSK {
+  position: absolute;
+  z-index: 1;
+  top: 274px;
+  left: 47px;
+  height: 37px;
+}
+.local-GFSSK {
+  position: absolute;
+  z-index: 2;
+  top: 306px;
+  left: 71px;
+  height: 36px;
+}
+
+.navs {
+  width: 100%;
+  padding: 36px 18px 32px;
+  gap: 6px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navs button {
+  position: relative;
+  width: 154px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.dilibiaoshi {
+  height: 24px;
+}
+
+.navs button .name {
+  position: absolute;
+  bottom: 20%;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 16px;
+  line-height: 1;
+  width: 100%;
+  font-weight: bolder;
+}
+
+/*  */
+section[role='dialog'] {
+  background: linear-gradient(to bottom, #9dd5d6, #d4edd8);
+}
